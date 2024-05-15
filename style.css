@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    to right,
+    rgb(0, 82, 212),
+    rgb(67, 100, 247),
+    rgb(111, 177, 252)
+  );
+  color: white;
+}
+
+.title {
+  text-align: center;
+
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+  letter-spacing: 5px;
+
+  -webkit-text-stroke: 1px black;
+
+  background: rgba(0, 0, 255, 0.479);
+}
+
+.svg {
+  display: inline;
+  position: relative;
+  top: 5px;
+  right: 1px;
+  height: 2.5rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.name {
+  font-size: 2rem;
+}
+
+.choice {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgba(145, 217, 243, 0.5) 0%,
+    rgba(147, 165, 243, 0.507) 90%
+  );
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+
+  border: 3px solid rgb(145, 217, 243);
+
+  background-clip: content-box;
+  padding: 0.7rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  padding: 10px;
+  border-radius: 10px;
+
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(145, 217, 243) 0%,
+    rgb(147, 164, 243) 90%
+  );
+
+  border: 2px solid rgba(145, 217, 243, 0.603);
+}
+
+.score-title {
+  font-weight: bolder;
+}
+.score-number {
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
+.status {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-align: center;
+
+  width: 300px;
+}
+
+.status .win-status {
+  font-size: 2rem;
+}
+
+.select-choice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.select-choice h2 {
+  font-size: 2rem;
+}
+
+.btn-container {
+  display: flex;
+  gap: 20px;
+  height: 6rem;
+}
+
+.btn-container button {
+  font-size: 5rem;
+  background: none;
+  cursor: pointer;
+}
+
+/* .btn-container button:active {
+  font-size: 6rem;
+} */
